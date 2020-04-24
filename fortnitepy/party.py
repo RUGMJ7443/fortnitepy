@@ -2329,7 +2329,6 @@ class ClientParty(PartyBase):
         content: :class:`str`
             The content of the message.
         """
-        await self.client.xmpp.send_party_message(content)
 
     async def _patch(self, updated: Optional[dict] = None,
                      deleted: Optional[list] = None) -> None:
